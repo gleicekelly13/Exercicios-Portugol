@@ -1,0 +1,20 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		//Declaração das variáves
+		inteiro tabuada // Aramzena o número informado pelo usuário(esse número será utilizado para montar a tabuada)
+		inteiro resultado // Armazena o resultado dos cálculos
+
+		escreva("Informe um número de 1 a 10 para ver sua tabuada: ")
+		leia(tabuada)
+
+		//Estrutura de repetição
+		para(inteiro contador = 0; contador <= 10; contador++)
+		{
+			resultado = contador * tabuada //Armazena o resultado de cada uma das multiplicações da tabuada de 0 até 10
+			escreva(contador + " x " + tabuada + " = " + resultado + "\n") // Escreve na tela cada linha da tabuada
+		}
+	}
+}
