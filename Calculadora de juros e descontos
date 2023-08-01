@@ -1,0 +1,30 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		//Desclaração das variáveis
+		real valor
+		real porcentagem
+		real desconto
+		real juros
+
+		//Entrada de dados
+		escreva("Informe o valor: ")
+		leia(valor)
+
+		escreva("Informe a porcentagem: ")
+		leia(porcentagem)
+
+		//Implementação da lógica
+		desconto = valor - (valor * (porcentagem/100))
+
+		juros = valor + (valor * (porcentagem/100))
+
+		//Sáida de dados
+		escreva("\n" + valor + " com " + porcentagem + "% de desconto é " + desconto)
+		escreva("\n" + valor + " com " + porcentagem + "% de juros é " + juros)
+		
+
+	}
+}
