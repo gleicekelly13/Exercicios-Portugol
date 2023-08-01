@@ -1,0 +1,52 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		//Declaração das variáveis
+		real numero1
+		real numero2
+		caracter operacao
+
+		//Entrada de dados do usuário
+		escreva("Mini calculadora de dois número\n\n")
+
+		escreva("Digite o primeiro número: ")
+		leia(numero1)
+
+		escreva("Digite o segundo número: ")
+		leia(numero2)
+
+		escreva("\nEscolha a operação que deseja efetuar\n\n")
+		//Aqui pedimos ao usuário para escolher a operação
+		escreva("+ - Soma\n")
+		escreva("- - Subtração\n")
+		escreva("* - Multiplicação\n")
+		escreva("/ - Divisão\n")
+		//Recebemos a escolha pelo comando leia
+		leia(operacao)
+
+		//Execução da operação(de acordo com a escolha do usuário) e impressão do resultado
+		escreva("\nVocê escolheu a operação: " + operacao + "\n")
+		escreva("\nResultado: " + numero1 + " " + operacao + + " " + numero2 + " = ")
+
+		se(operacao == '+')
+		{
+			escreva(numero1 + numero2)		 
+		}
+		se(operacao == '-')
+		{
+			escreva(numero1 - numero2)
+		}
+		se(operacao =='*')
+		{
+			escreva(numero1 * numero2)
+		}
+		se(operacao =='/')
+		{
+			escreva(numero1 / numero2)
+		}
+	}	
+	
+	
+}
