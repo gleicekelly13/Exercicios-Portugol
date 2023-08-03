@@ -1,0 +1,22 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro numero_camisetas
+		real preco_camiseta
+		real total_compra = 0
+
+		escreva("Informe o número de camisetas: ")
+		leia(numero_camisetas)
+
+		para(inteiro contador = 1; contador <= numero_camisetas; contador++)
+		{
+			escreva("\nInforme o preço da camiseta: R$ ")
+			leia(preco_camiseta)
+
+			total_compra = total_compra + preco_camiseta
+		}
+		escreva("\nTotal: R$ " + total_compra + "\n")
+	}
+}
