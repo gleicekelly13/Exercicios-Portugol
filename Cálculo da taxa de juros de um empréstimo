@@ -1,0 +1,29 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		//Declaração das variáveis
+		real valor_emprestimo
+		real taxa_juros = 0.03 // 3%
+
+		inteiro contador = 1
+		inteiro parcelas_totais = 6
+
+		escreva("Informe o valor do empréstimo: R$ ")
+		leia(valor_emprestimo)
+
+		enquanto(contador <= parcelas_totais)
+		{
+			inteiro numero_parcelas = contador //variável que recebe o valor do contador
+
+			real juros_emprestimo = valor_emprestimo * taxa_juros * numero_parcelas //Calcula o valor dos juros com base no valor do empréstimo, taxa e número de parcelas
+
+			escreva("A taxa de juros no período de " + numero_parcelas + " mes(es) é de R$" + juros_emprestimo + "0\n") // Resultado dos juros de cada período
+
+			contador = contador + 1
+		}
+	}
+}
+/*SIstema que calcula a taxa de juros de um empréstimo com base na sua duração, 
+que vai de 1 a 6 meses.O usuário informa o valor do empréstimo e o sistema calcula os juros automaticamente.*/
