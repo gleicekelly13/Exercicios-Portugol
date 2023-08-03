@@ -1,0 +1,48 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		cadeia nome
+		cadeia idade
+		caracter tem_filhos
+
+		escreva("\nCadastro do plano de saúde\n")
+
+		escreva("\nInforme seu nome: ")
+		leia(nome)
+
+		escreva("\nInforme sua idade: ")
+		leia(idade)
+
+		escreva("\nTem filhos? (S = Sim, N = Não) ")
+		leia(tem_filhos)
+
+		escolha(tem_filhos)
+		{
+			caso 'S':
+			inteiro quantos_filhos
+			cadeia nome_filho
+			inteiro idade_filho
+
+			escreva("\nInforme quantos filhos: ")
+			leia(quantos_filhos)
+
+			se(quantos_filhos == 1)
+			{
+				escreva("\nInforme o nome do filho(a): ")
+				leia(nome_filho)
+			}
+			senao
+			{
+				para(inteiro contador = 1; contador <= quantos_filhos; contador++)
+				{
+				escreva("\nInforme o nome do " + contador + "º filho: ")
+				leia(nome_filho)
+				}
+			}
+			pare
+		}
+		escreva("\nCadastro concluído com sucesso!\n")
+	}
+}
