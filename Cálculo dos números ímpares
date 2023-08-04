@@ -1,0 +1,21 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro contador = 1
+		inteiro soma = 0
+		real media
+
+		enquanto(contador <= 50)
+		{
+			se(contador % 2 != 0)
+			{
+				soma = soma + contador //o contador será somado à variável soma
+			}
+			contador = contador + 1 //caso contrário, é simplesmente incrementado em 1
+		}
+		media = soma / 50
+		escreva(media)
+	}
+}
