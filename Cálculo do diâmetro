@@ -1,0 +1,18 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real raio
+		real diametro
+
+		escreva("Calculando o diametro\n\n")
+
+		escreva("Informe o raio da circunferência: ")
+		leia(raio)
+
+		diametro = raio * 2
+
+		escreva("O diâmetro é: " + diametro + "cm")
+	}
+}
