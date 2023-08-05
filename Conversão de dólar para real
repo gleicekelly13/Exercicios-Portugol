@@ -1,0 +1,21 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro contador = 1
+		real USD
+		real BRL
+
+		enquanto(contador <= 5)
+		{
+			escreva("\nDigite o valor em dólar (USD): ")
+			leia(USD)
+
+			BRL = USD * 5.60
+
+			escreva("O valor em reais é: R$ " + BRL)
+			contador++
+		}
+	}
+}
