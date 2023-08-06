@@ -1,0 +1,41 @@
+programa
+{
+	
+	funcao inicio()
+	{	//Declaração das variáveis
+		inteiro cadeiras_disponiveis = 20
+		inteiro ingressos = 0
+
+		escreva("Ingressos de cinema\n")
+		escreva("Cadeiras disponíveis: " + cadeiras_disponiveis +"\n\n")
+		//Estrutura de repetição
+		enquanto(cadeiras_disponiveis > 0) //Será executada enquanto houver cadeiras disponíveis
+		{
+			escreva("Quanto ingressos deseja comprar? ")
+			leia(ingressos)
+			//Estrutura condicional
+			se(ingressos > cadeiras_disponiveis) //Verifica se o valor da variável é maior que o de cadeiras_disponíveis 
+			{//O objetivo dessa condição é evitar que sejam vendidos ingressos além do limite de cadeiras disponíveis
+				escreva("\nVocê tentou comprar " + ingressos + " ingressos\n") //O sistema informará ao usuário que o número de ingressos que ele tentou comprar é maior que o de cadeiras_disponiveis
+				escreva("Cadeiras disponíveis: " + cadeiras_disponiveis + "\n\n")
+			}
+			senao
+			{
+				cadeiras_disponiveis = cadeiras_disponiveis - ingressos //Aqui o valor da variável cadeiras_disponiveis será atualizado, ou seja,subtraímos seu valor atual do número de ingressos vendidos
+				escreva("\nVocê comprou " + ingressos + " ingressos\n") // Confirma para o usuário quantos ingressos ele comprou
+
+				 se(cadeiras_disponiveis == 0) //Inicia uma nova verificação para saber se ainda existem cadeiras disponíveis após a venda dos ingressos
+				 {// Se for 0, será informado ao usuário que não há mais cadeiras, e a repetição será interrompida, encerrando a aplicação
+				 	escreva("Não há mais cadeiras disponíveis\n\n")
+				 	pare
+				 }
+				 senao
+				 {
+				 	escreva("Cadeiras disponíveis: " + cadeiras_disponiveis + "\n\n")
+				 }
+			}
+		}/*Sistema de venda de ingressos de cinema com vagas limitadas
+		O usuário informa quantos ingressos quer comprar e o sistema vende se houver lugares disponíveis
+		O sistema será repetido até que os lugares se esgotem.*/
+	}
+}
