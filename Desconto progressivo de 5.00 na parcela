@@ -1,0 +1,31 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real total_compras
+		inteiro parcelas
+		real valor_parcelas
+		real total_desconto
+		real taxa_juros = 5.0
+
+		escreva("Informe o valor total da compra: ")
+		leia(total_compras)
+
+		escreva("Deseja parcelar em quantas vezes: ")
+		leia(parcelas)
+
+		valor_parcelas = total_compras / parcelas
+
+		para(inteiro contador = 1; contador <= parcelas; contador++)
+		{
+			total_desconto = valor_parcelas - (contador * taxa_juros)
+			escreva("\n" + contador + "x - R$" + total_desconto)
+		}
+	}
+}
+/*A aplicação deve receber um valor do usuário;
+ * A aplicação deve permitir o parcelamento desse valor;
+ * Cada parcela deve receber um desconto progressivo de R$ 5,00, 
+ * ou seja: 1x = valor da parcela -(1 x 5), 2x = valor da  parcela -( 2 x 5)
+ */
