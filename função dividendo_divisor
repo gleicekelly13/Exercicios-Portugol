@@ -1,0 +1,26 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		//declaração das variáveis //
+		real dividendo 
+		real divisor
+		real resultado
+		
+		//Entrada de dados do usuário: dividendo e divisor //
+		escreva("Digite o dividendo: ") 
+		leia(dividendo)
+
+		escreva("Digite o divisor: ")
+		leia(divisor)
+
+		//Cálculo da divisão e impressão do resultado final //
+		resultado = dividendo / divisor
+		escreva(resultado)
+
+		/*Também poderia ser 
+		 * escreva(dividendo / divisor) , neste caso, a variável resultado não precisaria ser declarada
+		 */
+	}
+}
