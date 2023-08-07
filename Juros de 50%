@@ -1,0 +1,31 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real total 
+		inteiro parcelas
+		real valor_parcela
+		real parcelas_juros
+		real total_juros
+
+		escreva("Compra de produto\n\n")
+
+		escreva("Informe o valor da compra: ")
+		leia(total)
+
+		escreva("Informe o número de parcelas: ")
+		leia(parcelas)
+
+		valor_parcela = total / parcelas // valor de cada parcela
+
+		parcelas_juros = valor_parcela + (valor_parcela / 2) // adiciona 50% de juros em cima do valor da parcela
+
+		total_juros = parcelas * parcelas_juros // valor final do produto com os juros acrescentados
+
+		escreva("O produto custa R$ " + total + "\n")
+		escreva("Você parcelou a compra em " + parcelas + " vezes\n")
+		escreva("Você pagará " + parcelas + "x de R$ " + parcelas_juros + "\n")
+		escreva("O valor final do produto é R$ " + total_juros + "\n")
+	}	
+}
