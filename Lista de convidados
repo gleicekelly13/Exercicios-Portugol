@@ -1,0 +1,17 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro contador = 1
+		inteiro convidados = 3
+		cadeia nome_convidado
+
+		enquanto(contador <= convidados)
+		{
+			escreva("Digite o nome do " + contador + "° convidado: ")
+			leia(nome_convidado)
+			contador = contador + 1
+		}
+	}
+}
