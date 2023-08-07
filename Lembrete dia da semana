@@ -1,0 +1,16 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro contador = 1
+		cadeia lembrete
+
+		enquanto(contador <= 7)
+		{
+			escreva("Informe o lembrete para o " + contador + "º dia da semana: ")
+			leia(lembrete)
+			contador++
+		}
+	}
+}
