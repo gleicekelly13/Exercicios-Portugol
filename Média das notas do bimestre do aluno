@@ -1,0 +1,34 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		//Declaração das variáveis
+		inteiro contador = 1
+		real nota
+		real soma_nota = 0 //Armazena a soma de todas as notas
+		real media
+
+		//Estrutura de repetição
+		faca
+		{
+			escreva("Informe a "+ contador +"ª nota: ")
+			leia(nota)
+
+			soma_nota = soma_nota + nota //Aqui fazemos a soma de todas as notas informas e salvamos o resultado na variável soma_nota
+			contador = contador + 1
+		}
+		enquanto(contador <= 4)
+
+		media = soma_nota / 4
+		//Estrutura condicional
+		se(media >= 7)
+		{
+			escreva("\nSua média é: " + media + "\nVocê foi Aprovado. \n")
+		}
+		senao
+		{
+			escreva("Sua média é: " + media + "\nVocê foi Reprovado. \n")
+		}
+	}
+}
