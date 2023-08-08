@@ -1,0 +1,21 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real idade_jogador
+		real soma_idades = 0
+		real media
+
+		para(inteiro contador = 1; contador <= 11; contador++)
+		{
+			escreva("Digite a idade do jogador camisa " + contador + ": ")
+			leia(idade_jogador)
+
+			soma_idades = soma_idades + idade_jogador
+		}
+		media = soma_idades / 11
+
+		escreva("\nMédia de idade dos jogadores: " + media)
+	}
+}
