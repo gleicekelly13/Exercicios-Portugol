@@ -1,0 +1,27 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro contador = 1
+		inteiro quantidade_alunos
+		inteiro idade = 0
+		inteiro idade_total = 0
+		inteiro media
+
+		escreva("\nMédia de idade dos alunos\n")
+		escreva("\nInforme o número de alunos do curso: ")
+		leia(quantidade_alunos)
+
+		enquanto(contador <= quantidade_alunos)
+		{
+			escreva("\nInforme a idade do " + contador + "º aluno: ")
+			leia(idade)
+
+			idade_total = idade_total + idade //Todas as idades são somadas na variável idade_total 
+			contador++
+		}
+		media = idade_total / quantidade_alunos
+		escreva("\nMédia de idade: " + media)
+	}
+}
