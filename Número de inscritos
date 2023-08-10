@@ -1,0 +1,17 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro contador = 1
+		inteiro inscritos = 10
+		cadeia nome_inscrito
+
+		enquanto(contador <= inscritos)
+		{
+			escreva("Informe o nome do " + contador + " º inscritos: ")
+			leia(nome_inscrito)
+			contador = contador + 1
+		}
+	}
+}
