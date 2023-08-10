@@ -1,0 +1,20 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		
+		real numero
+		real total = 1
+
+		para(inteiro contador = 1; contador <= 8; contador++)
+		{
+			escreva("Digite um número " + contador + ": ")
+			leia(numero)
+
+			total = total * numero
+			
+		}
+		escreva(total)
+	}
+}
