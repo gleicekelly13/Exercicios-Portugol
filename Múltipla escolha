@@ -1,0 +1,58 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro tentativas = 3
+		inteiro resposta
+
+		enquanto(tentativas > 0)
+		{
+			escreva("\nResponda à pergunta corretamente. Você tem " +tentativas + " tentativas\n\n")
+
+			escreva("2 + 2 é igual a ...?\n\n")
+			escreva("1) 6\n")
+			escreva("2) 4\n")
+			escreva("3) 8\n")
+			escreva("4) 9\n\n")
+			leia(resposta)
+
+			escolha(resposta)
+			{
+				caso 1:
+				tentativas = tentativas - 1
+				se(tentativas == 0)
+				{
+					escreva("\nVocê errou a questão e ficou sem tentativas\n")
+				}
+				pare
+				caso 2:
+				escreva("\nVocê acertou a questão!\n")
+				tentativas = 0
+				pare
+				caso 3:
+				tentativas = tentativas - 1
+				se(tentativas == 0)
+				{
+					escreva("\nVocê errou a questão e ficou sem tentativas\n")
+				}
+				pare
+				caso 4:
+				tentativas = tentativas - 1
+				se(tentativas == 0)
+				{
+					escreva("\nVocê errou a questão e ficou sem tentativas\n")
+				}
+				pare
+				caso contrario:
+				escreva("\nOpção inválida. Escolha uma das opções de 1 a 4.\n")
+				pare
+			}
+		}
+	}
+}
+/*A aplicação deve fazer uma pergunta de múltipla escolha;
+ * O usuário tem três chances de acertar;
+ * Se ele acertar, a aplicação encerra(zeramos as tentativas e mostramos uma mensagem de acerto);
+ * Se ele errar, tiramos uma tentativa dele e repetimos o código.
+ */
