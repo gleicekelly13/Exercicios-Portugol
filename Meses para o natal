@@ -1,0 +1,17 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real mes_atual 
+		real mes_natal = 12
+		real mes_faltam
+
+		escreva("Digite o mês atual: ")
+		leia(mes_atual)
+
+		mes_faltam = mes_natal - mes_atual
+
+		escreva("Faltam " + mes_faltam + " meses para o natal")
+	}
+}
