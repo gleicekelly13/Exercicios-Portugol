@@ -1,0 +1,17 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real numero1
+		real numero2
+
+		escreva("Digite um número entre 2 e 10: ")
+		leia(numero1)
+
+		escreva("Digite um número entre 2 e 5: ")
+		leia(numero2)
+
+		escreva(numero1 + numero2)
+	}
+}
