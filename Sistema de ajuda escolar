@@ -1,0 +1,64 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		//Inicialmente terá apenas uma variável 
+		inteiro calculo
+
+		escreva("Sistema de ajuda escolar\n\n")
+
+		escreva("O que deseja fazer?\n\n")
+		escreva("1 - Calcular a área do triângulo\n")
+		escreva("2 - Calcular delta usando a fórmula de Bhaskara\n\n")
+		//Aqui vai ser amazenada a escolha do usuário
+		leia(calculo)
+
+		se(calculo == 1)
+		{
+			real base
+			real altura
+			real area
+
+			escreva("Informe a base do triângulo (cm): ")
+			leia(base)
+
+			escreva("Informe a altura do triângulo (cm): ")
+			leia(altura)
+
+			se(base > 0 e altura > 0)
+			{
+				area = (base * altura) / 2
+				escreva("\nA área do triângulo é: " + area + " cm²")
+			}
+			senao 
+			{
+				escreva("\nA base e a altura devem ser maiores que 0")
+			}
+		}
+		senao se(calculo == 2)
+		{
+			real a
+			real b
+			real c
+			real delta
+
+			escreva("Informe o valor de a: ")
+			leia(a)
+
+			escreva("Informe o valor de b: ")
+			leia(b)
+
+			escreva("Informe o valor de c: ")
+			leia(c)
+
+			delta = (b * b) - (4 * a * c)
+			escreva("\ndelta = " + delta + "\n")
+		}
+		//Se a escolha do usuário for diferente de 1 e 2, o senao será executado
+		senao
+		{
+			escreva("\nOpção Inválida")
+		}
+	}
+}
