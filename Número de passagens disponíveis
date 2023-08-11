@@ -1,0 +1,24 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro passagens = 20
+		inteiro numero_compra
+
+		enquanto(passagens > 0)
+		{
+			escreva("\nDeseja comprar quantas passagens? ")
+			leia(numero_compra)
+
+			se(passagens >= numero_compra)
+			{
+				passagens = passagens - numero_compra
+			}
+			senao
+			{
+				escreva("Temos apenas " + passagens + " passagens_disponíveis\n\n")
+			}
+		}
+	}
+}
