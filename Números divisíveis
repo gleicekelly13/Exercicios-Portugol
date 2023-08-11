@@ -1,0 +1,24 @@
+programa
+{
+	
+	funcao inicio()
+	{	//Declaração da variável
+		inteiro numero 
+		//Entrada de dados
+		escreva("Divisíveis\n\n")
+
+		escreva("Informe qualquer número: ")
+		leia(numero)
+		//Estrutura de repetição
+		para(inteiro contador = 1; contador <= numero; contador++)
+		{
+			se(numero % contador == 0)
+			{
+				escreva(numero +" é divisível por " + contador + "\n")
+			}
+		}
+	}
+}
+/*Sistema capaz de receber um número informado pelo usuário
+	e dizer por quais número ele é divisível. A estrutura de repetição 'para'
+	será executada até que o valor do contador seja igual ao número informado.*/
