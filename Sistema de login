@@ -1,0 +1,44 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		//Declaração das variáveis
+		cadeia login
+		cadeia senha
+		inteiro tentativas_restantes = 3 //será subtraído por -1 do valor da variavel cada vez que o usuário digita os dados de login incorretamente
+
+		escreva("Sistema de Login\n\n")
+		//Estrutura de repetição
+		faca
+		{
+			escreva("Digite seu login: ")
+			leia(login)
+
+			escreva("Digite sua senha: ")
+			leia(senha)
+
+			se(login == "admin" e senha == "123456")
+			{
+				escreva("Você está logado\n")
+				pare
+			}
+			senao
+			{
+				tentativas_restantes--// Se os dados estiverem incorretos, subtrai -1 da variável tentativas_restantes
+
+				se(tentativas_restantes == 0) //Nova checagem
+				{
+					escreva("\nNúmero de tentativas foi excedido.\n")
+					escreva("Conta bloqueada")
+				}
+				senao 
+				{
+					escreva("\nVocê tem mais " + tentativas_restantes + " tentativas\n\n")
+				}
+			}
+		}
+		enquanto(tentativas_restantes > 0)
+	}
+}/*Sistema de login com número de tentativas,o usuário informa o login e senha, e se errar os dados 3 vezes a conta será bloqueada
+Se o usuário digitar os dados corretamente, ele é logado no sistema e a repetição é encerrada*/
