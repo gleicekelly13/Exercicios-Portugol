@@ -1,0 +1,47 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		caracter operacao
+		inteiro numero = 1
+		inteiro total
+
+		escreva("Escolha qual operação deseja efetuar: \n\n")
+		escreva("+ - Soma\n")
+		escreva("* - Multiplicação\n\n")
+		leia(operacao)
+
+		escolha(operacao)
+		{
+			caso '+':
+			total = 0
+			para(inteiro contador = 1; contador <= 4; contador++)
+			{
+				escreva("Informe o " + contador + "º número: ")
+				leia(numero)
+
+				total = total + numero
+				
+			}
+			escreva("\nTotal: " + total + "\n")
+			pare
+			caso '*':
+			total = 1
+			para(inteiro contador = 1; contador <=3; contador++)
+			{
+				escreva("Informe o " + contador + "º número: ")
+				leia(numero)
+
+				total = total * numero
+				
+			}
+			escreva("\nTotal: " + total + "\n")
+			pare
+			caso contrario:
+			{
+				escreva("\nOpção inválida")
+			}
+		}
+	}
+}
