@@ -1,0 +1,25 @@
+programa
+{
+	
+	funcao inicio()
+	{	
+		//Declaração das variáveis
+		inteiro multiplicador //Valor correspondente a tabuada que será listada
+		inteiro contador = 0 //Variável contador para controlar o número de repetições do enquanto
+		inteiro resultado //Variável que armazenará o resultado das multiplicações da tabuada escolhida
+
+		escreva("Sistema de Tabuada\n\n")
+
+		escreva("Informe um número entre 1 a 10 para ver a tabuada: \n\n")
+		leia(multiplicador) //Através desse comando, recebemos do usuário qual tabuada ele quer ver e armazenamos na variável multiplicador
+
+		escreva("\nTabuada de " + multiplicador + "\n\n")
+		//Estrutura de repetição
+		enquanto(contador <= 10) //condição para exibir a tabuada até o número 10, o contador começa com valor 0, que foi o valor inicial declarado na variável contador
+		{
+			resultado = contador * multiplicador //Aqui será armazenado o resultado de cada multiplicação na variável resultado
+			escreva(contador + " x " + multiplicador + " = " + resultado + "\n") //Montamos a estrutura da tabuada e concatenamos o valor da variável resultado, exibindo o retorno na tela.
+			contador = contador + 1 //soma +1 ao contador, para que o processo de repetição avance para o próximo número até chegar ao 10
+		}
+	}
+}
