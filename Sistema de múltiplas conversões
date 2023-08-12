@@ -1,0 +1,59 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		//Declaração das variáveis
+		inteiro opcao
+		inteiro contador
+		//Estrutura de repetição
+		faca //loop faça...enquanto
+		{
+			escreva("Calculadora de conversões: Escolha uma opção: \n")
+			
+			escreva("\n1 - Celsius para Fahrenheit\n")
+			escreva("2 - Quilômetros para Milhas\n")
+			escreva("3 - Sair\n\n")
+			leia(opcao)
+			//Estrutura condicional
+			se(opcao == 3) //Condição de parada
+			{
+				pare
+			}
+
+			escolha(opcao)
+			{
+				caso 1:
+
+				real celsius
+				real fahrenheit
+
+				escreva("\nInforme o valor que deseja converter: ")
+				leia(celsius)
+				//Implementação do cálculo
+				fahrenheit = (celsius * 1.8) + 32
+
+				escreva("\n" + celsius + "°C equivale a " + fahrenheit + "°F\n\n")
+				pare
+			
+				caso 2:
+
+				real quilometros
+				real milhas
+
+				escreva("\nInforme o valor que deseja converter: ")
+				leia(quilometros)
+
+				milhas = quilometros * 0.621371
+			
+				escreva("\n" + quilometros + "km equivale a " + milhas + "mi\n\n")
+				pare
+
+				caso contrario:
+				escreva("\nOpção inválida\n")
+				pare
+			}
+		}
+		enquanto(opcao < 3) //condição do loop faça...enquanto
+	}
+}
