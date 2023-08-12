@@ -1,0 +1,52 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		cadeia nome
+		cadeia sobrenome
+		caracter sexo
+		inteiro idade
+		real peso
+		real altura
+		logico termos_uso
+
+		escreva("Bem-vindo ao sistema de cadastro\n\n")
+
+		escreva("Digite seu nome: ")
+		leia(nome)
+
+		escreva("Digite seu sobrenome: ")
+		leia(sobrenome)
+
+		escreva("Informe seu sexo: \n")
+		escreva("M = Maculino, F = Feminino \n")
+		leia(sexo)
+
+		escreva("Digite sua idade: ")
+		leia(idade)
+
+		escreva("Digite seu peso: ")
+		leia(peso)
+
+		escreva("Digite sua altura: ")
+		leia(altura)
+
+		escreva("Você aceita os termos de uso? \n")
+		escreva("verdadeiro/falso \n")
+		leia(termos_uso)
+
+		escreva("\nSeus dados cadastrados\n\n")
+
+		escreva("Nome: " + nome + " " + sobrenome)
+		escreva("\nSexo: " + sexo)
+		escreva("\nIdade: " + idade)
+		escreva("\nPeso: " + peso)
+		escreva("\nAltura: " + altura)
+		escreva("\nAceitou os termos? " + termos_uso)
+		
+		
+		
+		
+	}
+}
