@@ -1,0 +1,39 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro opcao
+		inteiro soma = 0
+
+		escreva("1) Testar estrutura para\n")
+		escreva("2) Testar estrutura enquanto\n\n")
+		leia(opcao)
+
+		escolha(opcao)
+		{
+			caso 1:
+			para(inteiro contador = 1; contador <= 5; contador++)
+			{
+				soma = soma + contador
+			}
+			escreva("\nResultado: " + soma + "\n")
+			pare
+
+			caso 2:
+			inteiro contador = 1
+
+			enquanto(contador <= 5)
+			{
+				soma = soma + contador
+				contador++
+			}
+			escreva("\nResultado: " + soma + "\n")
+			pare
+
+			caso contrario:
+			escreva("\nOpção inválida\n")
+			pare
+		}
+	}
+}
