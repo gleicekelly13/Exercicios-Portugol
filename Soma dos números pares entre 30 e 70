@@ -1,0 +1,21 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro contador = 30
+		inteiro soma = 0
+
+		enquanto(contador <= 70)
+		{
+			se(contador % 2 == 0)
+			{
+				soma = soma + contador
+				escreva("+ " + contador)
+			}
+
+			contador++
+		}
+		escreva("\nResultado: " + soma + "\n")
+	}
+}
