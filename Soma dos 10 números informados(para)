@@ -1,0 +1,19 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		
+		inteiro soma = 0 //Iniciando a variável atribuindo-lhe um valor inteiro.1
+		inteiro numero
+			
+		para(inteiro contador = 1; contador <= 10; contador++)
+		{
+			escreva("Digite o " + contador + "º número: ")
+			leia(numero)
+
+			soma = soma + numero
+		}
+		escreva("\nResultado: " + soma)
+	}
+}
