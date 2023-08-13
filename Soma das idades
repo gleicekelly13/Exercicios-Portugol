@@ -1,0 +1,20 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro contador = 1
+		inteiro idade
+		inteiro idade_total = 0
+
+		enquanto(contador <= 5)
+		{
+			escreva("Informe a idade da " + contador + "º pessoa: ")
+			leia(idade)
+
+			idade_total = idade_total + idade
+			contador++
+		}
+		escreva("A soma das idades é: " + idade_total)
+	}
+}
