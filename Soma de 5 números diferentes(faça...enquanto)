@@ -1,0 +1,23 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro contador = 1
+		inteiro soma = 0
+		inteiro numero
+
+		faca
+		{
+			escreva("Informe um número: ")
+			leia(numero)
+
+			soma = soma + numero
+			contador++
+		}
+		enquanto(contador <= 5)
+
+		escreva(soma)
+		
+	}
+}
