@@ -1,0 +1,52 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro opcao
+		inteiro numero
+		inteiro resultado
+
+		escreva("Escolha uma opção:\n\n")
+
+		escreva("1 - Somar\n")
+		escreva("2 - Multiplicar\n\n")
+		leia(opcao)
+
+		escolha(opcao)
+		{
+			caso 1:
+			resultado = 0
+			para(inteiro contador = 1; contador <= 10; contador++)
+			{
+				escreva("\nDigite o " + contador + "º número: ")
+				leia(numero)
+
+				resultado = resultado + numero //o programa está acumulando a soma dos números digitados na variável "resultado". A cada iteração do loop, o número digitado é adicionado ao valor atual de "resultado".
+			}
+			escreva("\nResultado: " + resultado + "\n")
+			pare
+
+			caso 2:
+			resultado = 1
+			para(inteiro contador = 1; contador <= 5; contador++)
+			{
+				escreva("Digite o " + contador + "º número: ")
+				leia(numero)
+
+				resultado = resultado * numero //o programa está acumulando o produto dos números digitados na variável "resultado". A cada iteração do loop, o número digitado é multiplicado pelo valor atual de "resultado".
+			}
+			escreva("\nResultado: " + resultado + "\n")
+			pare
+
+			caso contrario:
+			escreva("\nOpção inválida\n")
+			pare
+		}
+	}
+}
+/*O usuário tem duas opções de escolha: Somar 10 números ou Multiplicar 5 números;
+ * Se escolher a opçãp 1, ele poderá informar 10 números que serão somados;
+ * Se escolher a opçãp 2, ele poderá informar 5 números que serão multiplicados;
+ * No final da aplicação, o resultado da opção escolhida deve ser mostrado na tela.
+ */
