@@ -1,0 +1,24 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro tabuada
+		inteiro contador = 0
+		inteiro resultado
+
+		escreva("Sistema de tabuada\n\n")
+
+		escreva("Informe um número de 1 a 10 para ver a tabuada: ")
+		leia(tabuada)
+
+		escreva("\nTabuada de " + tabuada + "\n\n")
+
+		enquanto(contador <= 10)
+		{
+			resultado = contador * tabuada
+			escreva(contador + " x " + tabuada + " = " + resultado + "\n")
+			contador ++
+		}
+	}
+}
