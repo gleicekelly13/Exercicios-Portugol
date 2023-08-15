@@ -1,0 +1,20 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real valor
+		real desconto
+		real total
+
+		escreva("Digite o valor da compra: ")
+		leia(valor)
+
+		escreva("Digite o valor do desconto: ")
+		leia(desconto)
+
+		total = valor - desconto
+
+		escreva("O valor da compra é: R$ " + total + "0")
+	}
+}
