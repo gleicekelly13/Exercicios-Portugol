@@ -1,0 +1,21 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro contador = 20
+
+		enquanto(contador <= 50)
+		{
+			se(contador % 2 == 0)
+			{
+				escreva(contador + " é par\n")
+			}
+			senao
+			{
+				escreva(contador + " é ímpar\n")
+			}
+			contador = contador + 1
+		}
+	}
+}
