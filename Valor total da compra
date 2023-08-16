@@ -1,0 +1,24 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro contador = 1
+		inteiro numero_produtos
+		real preco_produtos
+		real total_compra = 0
+
+		escreva("Informe o número de produtos: ")
+		leia(numero_produtos)
+
+		enquanto(contador <= numero_produtos)
+		{
+			escreva("Informe o preço do produto: R$ ")
+			leia(preco_produtos)
+
+			total_compra = numero_produtos + preco_produtos
+			contador++
+		}
+		escreva("\nTotal: " + total_compra + "\n")
+	}
+}
