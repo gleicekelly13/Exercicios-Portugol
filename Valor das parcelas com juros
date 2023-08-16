@@ -1,0 +1,34 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro contador = 1
+		real valor_compra
+		real valor_parcela
+		real valor_juros_parcela
+		inteiro parcelas
+
+		escreva("Informe o valor da compra: R$ ")
+		leia(valor_compra)
+
+		escreva("Informe o número de parcelas: ")
+		leia(parcelas)
+
+		se(parcelas > 1)
+		{
+			valor_parcela = valor_compra / parcelas
+
+			enquanto(contador <= parcelas)
+			{
+				valor_juros_parcela = valor_parcela + ((valor_parcela * contador) / 100)
+				escreva(contador + "x - R$ " + valor_juros_parcela + "\n")
+				contador++ 
+			}
+		}
+		senao
+		{
+			escreva("Você vai pagar R$ " + valor_compra + " à vista")
+		}
+	}
+}
